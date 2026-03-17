@@ -31,23 +31,6 @@ assistant_instance = FitnessAssistant()
 async def root():    
     return {"message": "Salut, Fitness Assistant ruleaza!"}
 
-@app.get("/health.html", response_class=HTMLResponse)
-async def health_check():
-    html_content = """
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <title>Health Check</title>
-    </head>
-    <body>
-        <h1>OK</h1>
-        <p>Service is healthy</p>
-        <p>Status: Running</p>
-    </body>
-    </html>
-    """
-    return HTMLResponse(content=html_content, status_code=200)
-
 class ChatRequest(BaseModel):
     message: str
 
