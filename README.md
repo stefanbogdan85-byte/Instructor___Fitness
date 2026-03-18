@@ -1,4 +1,4 @@
-# langgraph-email-automation_resolver
+# INSTRUCTOR___FITNESS
 
 Instrucțiuni:
 
@@ -19,3 +19,6 @@ python src/services/fitness_assistant.py
 5. Pentru a rula metricile din evaluate rulați:
 în primul terminal: uvicorn app.main:app --reload
 și în al doilea terminal: python -m evaluation.evaluate
+
+6. Pentru a apela interfața de Gradio rulați:
+python .\gradio_app\app.py și deschideți localhost
