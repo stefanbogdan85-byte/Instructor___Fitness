@@ -3,7 +3,7 @@ from groq import Groq
 
 
 class GroqDeepEval(DeepEvalBaseLLM):
-    def __init__(self, model: str = "openai/gpt-oss-20b"):
+    def __init__(self, model: str = "openai/gpt-oss-120b"):
         self.model = model
         self.client = Groq()
 
